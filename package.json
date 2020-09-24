@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ./node_modules/.bin/_mocha",
-    "cover": "nyc ./node_modules/.bin/_mocha",
+    "test": "./node_modules/.bin/_mocha",
+    "cover": "nyc npm run test",
     "eslint": "eslint ./lib --fix"
   },
   "keywords": [],
