@@ -15,4 +15,4 @@ install:
   - npm install -D
 
 scripts:
-  - npm run cover
+  - npm test
