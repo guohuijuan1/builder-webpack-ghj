@@ -1,0 +1,19 @@
+const glob = require("glob-all")
+console.log(glob.sync([
+  './dist/index_*.js'
+]))
+
+describe('Checking generate css js files', () => {
+  it('should generate css js files', (done) => {
+    const files = glob.sync([
+      './dist/index_*.js',
+      './dist/search_*.js',
+      './dist/index_*.css',
+    ])
+    if (files.length > 0) {
+      done();
+    } else {
+      throw new Error('no css js files generated')
+    }
+  })
+})
