@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/_mocha",
-    "cover": "nyc npm run test",
+    "cover": "nyc ./node_modules/.bin/_mocha",
     "eslint": "eslint ./lib --fix"
   },
   "keywords": [],
